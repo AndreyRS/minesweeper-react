@@ -1,57 +1,57 @@
 .cell {
-    background-image: url('../sprite100.gif');
-    background-position: 0 -39px;
-    width: 16px;
-    height: 16px;
-    float: left;
-    cursor: pointer;
-    opacity: .75;
+  background-image: url('../sprite100.gif');
+  background-position: 0 -39px;
+  width: 16px;
+  height: 16px;
+  float: left;
+  cursor: pointer;
+  opacity: .75;
 }
 
 .flag {
-    background-position: -16px -39px;
+  background-position: -16px -39px;
 }
 
 .mineRed {
-    background-position: -32px -39px;
+  background-position: -32px -39px;
 }
 
 .mine {
-    background-position: -64px -39px;
+  background-position: -64px -39px;
 }
 
 .open0 {
-    background-position: 0 -23px;
+  background-position: 0 -23px;
 }
 
 .open1 {
-    background-position: -16px -23px;
+  background-position: -16px -23px;
 }
 
 .open2 {
-    background-position: -32px -23px;
+  background-position: -32px -23px;
 }
 
 .open3 {
-    background-position: -48px -23px;
+  background-position: -48px -23px;
 }
 
 .open4 {
-    background-position: -64px -23px;
+  background-position: -64px -23px;
 }
 
 .open5 {
-    background-position: -80px -23px;
+  background-position: -80px -23px;
 }
 
 .open6 {
-    background-position: -96px -23px;
+  background-position: -96px -23px;
 }
 
 .open7 {
-    background-position: -112px -23px;
+  background-position: -112px -23px;
 }
 
 .open8 {
-    background-position: -128px -23px;
+  background-position: -128px -23px;
 }

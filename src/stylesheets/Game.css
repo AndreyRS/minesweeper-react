@@ -1,37 +1,37 @@
 .game {
-    padding: 40px;
+  padding: 40px;
 }
 
 .game > table {
-    margin: 0 auto;
-    background-color: #828282;
+  margin: 0 auto;
+  background-color: #828282;
 }
 
 .game table, th, td {
-   border: 2px #aeaeae;
-   border-style: outset;
+  border: 2px #aeaeae;
+  border-style: outset;
 }
 
 .game .boardWrapper {
-    margin: 20px;
+  margin: 20px;
 }
 
 .playBtn {
-    display: inline-block;
-    border: outset 4px #aeaeae;
-    margin: 5px;
-    font-family: sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    color: #222222;
-    padding: 4px 6px;
-    cursor: pointer;
+  display: inline-block;
+  border: outset 4px #aeaeae;
+  margin: 5px;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #222222;
+  padding: 4px 6px;
+  cursor: pointer;
 }
 
 .playBtn:hover {
-    background-color: #cccccc;
+  background-color: #cccccc;
 }
 
 .playBtn:active {
-    border-style: inset;
+  border-style: inset;
 }

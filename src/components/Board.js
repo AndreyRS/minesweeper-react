@@ -225,7 +225,10 @@ class Board extends React.Component {
 }
 
 Board.propTypes = {
-  configuration: PropTypes.object
+  configuration: PropTypes.object,
+  startGame: PropTypes.func.isRequired,
+  stopGame: PropTypes.func.isRequired,
+  updateMines: PropTypes.func.isRequired
 };
 
 Board.defaultProps = {

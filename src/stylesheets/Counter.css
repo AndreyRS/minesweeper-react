@@ -1,49 +1,49 @@
 .counter {
-    width: calc(13px * 3);
-    height: 23px;
-    display: inline-block;
-    border: inset 4px #c0c0c0;
-    margin: 5px 10px;
+  width: calc(13px * 3);
+  height: 23px;
+  display: inline-block;
+  border: inset 4px #c0c0c0;
+  margin: 5px 10px;
 }
 
 .counterNum {
-    background-image: url('../sprite100.gif');
-    opacity: .9;
-    width: 13px;
-    height: 23px;
-    display: inline-block;
+  background-image: url('../sprite100.gif');
+  opacity: .9;
+  width: 13px;
+  height: 23px;
+  display: inline-block;
 }
 
 .counter0 {
-    background-position: 0 0;
+  background-position: 0 0;
 }
 .counter1 {
-    background-position: -13px 0;
+  background-position: -13px 0;
 }
 .counter2 {
-    background-position: -26px 0;
+  background-position: -26px 0;
 }
 .counter3 {
-    background-position: -39px 0;
+  background-position: -39px 0;
 }
 .counter4 {
-    background-position: -52px 0;
+  background-position: -52px 0;
 }
 .counter5 {
-    background-position: -65px 0;
+  background-position: -65px 0;
 }
 .counter6 {
-    background-position: -78px 0;
+  background-position: -78px 0;
 }
 .counter7 {
-    background-position: -91px 0;
+  background-position: -91px 0;
 }
 .counter8 {
-    background-position: -104px 0;
+  background-position: -104px 0;
 }
 .counter9 {
-    background-position: -117px 0;
+  background-position: -117px 0;
 }
 .counterMinus {
-    background-position: -130px 0;
+  background-position: -130px 0;
 }
