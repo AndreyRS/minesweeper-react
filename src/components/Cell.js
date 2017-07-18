@@ -56,7 +56,7 @@ class Cell extends React.Component {
           valueToSet = CELL_DISPLAY.FLAG;
         }
         else if (this.props.getStatus() === GAME_STATUS.LOST) {
-          valueToSet = CELL_DISPLAY.MINE;
+          valueToSet = this.marked ? CELL_DISPLAY.FLAG : CELL_DISPLAY.MINE;
         }
       }
       else {
