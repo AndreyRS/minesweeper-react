@@ -34,6 +34,11 @@ class Game extends React.Component {
   updateMines(delta) {
     this.mineCounter.update(delta);
   }
+  /*
+    Perhaps adding something like timerWrapper would be a good idea,
+    but in current situation it'll result in having another component 
+    with sigle use and only one line of actual logic
+  */
   updateTimer() {
     this.timeCounter.update(1);
   }

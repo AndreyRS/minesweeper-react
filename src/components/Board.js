@@ -207,7 +207,10 @@ class Board extends React.Component {
     this.openCells(this.cells.filter((c, i) => toOpen.includes(i)));
   }
 
-
+  /*
+    While use of ref here is not a best practice, it'll allow me to update
+    only necessary elements without decreasing performance
+  */
   render() {
     return (
       <div className="board"
