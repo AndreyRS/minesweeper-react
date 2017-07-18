@@ -9,7 +9,7 @@ const BTN_TYPE = Object.freeze({
 });
 
 const CELL_DISPLAY = Object.freeze({
-  FLAG: 'flag', MINE_EXPLODE: 'mine-red', MINE: 'mine',
+  FLAG: 'flag', MINE_EXPLODE: 'mineRed', MINE: 'mine',
   OPEN0: 'open0', OPEN1: 'open1', OPEN2: 'open2',
   OPEN3: 'open3', OPEN4: 'open4', OPEN5: 'open5',
   OPEN6: 'open6', OPEN7: 'open7', OPEN8: 'open8'

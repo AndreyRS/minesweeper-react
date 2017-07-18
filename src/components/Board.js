@@ -26,7 +26,7 @@ class Board extends React.Component {
     this.gameStatus = GAME_STATUS.NOT_STARTED;
 
     this.params = this.props.configuration;
-    this.cell_amount = this.params.x * this.params.y;
+    this.cellAmount = this.params.x * this.params.y;
 
     this.board = this.createBoard();
     this.setMines();
@@ -39,7 +39,7 @@ class Board extends React.Component {
   // SETUP
 
   setRandomMine(excluded) {
-    const index = Math.floor(Math.random() * this.cell_amount);
+    const index = Math.floor(Math.random() * this.cellAmount);
     let iMine = -1;
     if (!excluded.includes(index) && this.board[index] !== CELL_VALUE.MINE) {
       iMine = index;
@@ -142,7 +142,7 @@ class Board extends React.Component {
   }
   createBoard() {
     const board = [];
-    for (let i = 0; i < this.cell_amount; i++) {
+    for (let i = 0; i < this.cellAmount; i++) {
       board.push(CELL_VALUE.OPEN0);
     }
     return board;
@@ -162,7 +162,7 @@ class Board extends React.Component {
           this.props.startGame();
         }
         if (this.gameStatus !== GAME_STATUS.LOST) {
-          const cellsLeft = this.cell_amount - this.open;
+          const cellsLeft = this.cellAmount - this.open;
           if (cellsLeft === this.params.mines) {
             this.endGame(true);
           }

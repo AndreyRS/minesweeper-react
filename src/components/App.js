@@ -5,8 +5,8 @@ import Game from '../components/Game';
 class App extends React.Component {
     render() {
         return (
-            <div className="App">
-                <div className="App-header">
+            <div className="app">
+                <div className="appHeader">
                     <h2>Minesweeper</h2>
                 </div>
                 <Game />
