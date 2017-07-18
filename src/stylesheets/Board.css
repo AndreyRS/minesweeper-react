@@ -1,0 +1,6 @@
+.board {
+  border-right: 1px solid #828282;
+  border-bottom: 1px solid #828282;
+  margin: 20px auto;
+  border: 4px inset;
+}
