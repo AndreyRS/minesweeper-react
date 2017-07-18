@@ -48,24 +48,24 @@ class Cell extends React.Component {
     let valueToSet = this.value;
     if (valueToSet === CELL_DISPLAY.MINE) {
       if (fromBoard) {
-        if (this.props.getStatus() === GAME_STATUS.WON) {
+        if (this.props.getGameStatus() === GAME_STATUS.WON) {
           if (!this.marked) {
-            this.props.updateStatus(ACTION_TYPE.MARKED);
+            this.props.updateGameStatus(ACTION_TYPE.MARKED);
           }
           this.marked = true;
           valueToSet = CELL_DISPLAY.FLAG;
         }
-        else if (this.props.getStatus() === GAME_STATUS.LOST) {
+        else if (this.props.getGameStatus() === GAME_STATUS.LOST) {
           valueToSet = this.marked ? CELL_DISPLAY.FLAG : CELL_DISPLAY.MINE;
         }
       }
       else {
         valueToSet = CELL_DISPLAY.MINE_EXPLODE;
-        this.props.updateStatus(ACTION_TYPE.OPEN_MINE, this.props.id);
+        this.props.updateGameStatus(ACTION_TYPE.OPEN_MINE, this.props.id);
       }
     }
     else {
-      this.props.updateStatus(ACTION_TYPE.OPEN_EMPTY, this.props.id);
+      this.props.updateGameStatus(ACTION_TYPE.OPEN_EMPTY, this.props.id);
       if (valueToSet === CELL_DISPLAY.OPEN0 && !fromBoard) {
         this.props.openNeighbors(this.props.id);
       }
@@ -87,7 +87,7 @@ class Cell extends React.Component {
     }
     else if (e.button === BTN_TYPE.RIGHT && !this.open) {
       this.marked = !this.marked;
-      this.props.updateStatus(this.marked ? ACTION_TYPE.MARKED : ACTION_TYPE.UNMARKED);
+      this.props.updateGameStatus(this.marked ? ACTION_TYPE.MARKED : ACTION_TYPE.UNMARKED);
       this.setState({ display: this.marked ? CELL_DISPLAY.FLAG : '' });
     }
   }
@@ -121,8 +121,8 @@ Cell.propTypes = {
   id: PropTypes.number.isRequired,
   value: PropTypes.number,
   openNeighbors: PropTypes.func.isRequired,
-  getStatus: PropTypes.func.isRequired,
-  updateStatus: PropTypes.func.isRequired
+  getGameStatus: PropTypes.func.isRequired,
+  updateGameStatus: PropTypes.func.isRequired
 };
 
 Cell.defaultProps = {

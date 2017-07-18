@@ -32,8 +32,8 @@ class Board extends React.Component {
     this.setMines();
 
     this.openNeighbors = this.openNeighbors.bind(this);
-    this.updateStatus = this.updateStatus.bind(this);
-    this.getStatus = this.getStatus.bind(this);
+    this.updateGameStatus = this.updateGameStatus.bind(this);
+    this.getGameStatus = this.getGameStatus.bind(this);
   }
 
   // SETUP
@@ -150,10 +150,10 @@ class Board extends React.Component {
 
   // CONTROLS
 
-  getStatus() {
+  getGameStatus() {
     return this.gameStatus;
   }
-  updateStatus(actionType, index) {
+  updateGameStatus(actionType, index) {
     switch (actionType) {
       case ACTION_TYPE.OPEN_EMPTY:
         this.open++;
@@ -216,7 +216,7 @@ class Board extends React.Component {
           this.board.map((cell, index) => (
             <Cell key={index} id={index} ref={c => this.cells.push(c)}
               value={cell} openNeighbors={this.openNeighbors}
-              getStatus={this.getStatus} updateStatus={this.updateStatus} />
+              getGameStatus={this.getGameStatus} updateGameStatus={this.updateGameStatus} />
           ))
         }
       </div>
